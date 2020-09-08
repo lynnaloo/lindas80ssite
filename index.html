@@ -49,7 +49,7 @@ Send comments and mail to <A HREF="Mailto:Lynna Jagr@aol.com">Linda</a><P>
 
 <script>
     (async function() {
-        let { text } = await( await fetch(`/api/message`)).json();
+        let { text } = await( await fetch(`/api/message`));
         document.querySelector('#message').textContent = text;
     }())
 </script>
